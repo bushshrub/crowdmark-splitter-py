@@ -58,6 +58,8 @@ if __name__ == "__main__":
     file = PdfReader(input_path)
     if max(indices) - 1 > len(file.pages):
         raise ValueError("One of the indices is out of bounds.")
+    # add split for last page
+    indices.append(len(file.pages) + 1)
     output_files = split_pdf_file(file, indices)
     for i, output_file in enumerate(output_files):
         output_path = output_dir / f"Q{args.start_question_number + i}.pdf"

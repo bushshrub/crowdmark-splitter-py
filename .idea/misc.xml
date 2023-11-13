@@ -2,7 +2,7 @@
 <project version="4">
   <component name="Black">
     <option name="enabledOnReformat" value="true" />
-    <option name="sdkUUID" value="35c507a0-d45a-4b09-a238-7a7a187b3c88" />
+    <option name="sdkName" value="Python 3.11 (crowdmark-splitter-py)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Poetry (crowdmark-splitter-py)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (crowdmark-splitter-py)" project-jdk-type="Python SDK" />
 </project>
