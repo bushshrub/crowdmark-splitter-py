@@ -87,7 +87,7 @@ if __name__ == "__main__":
     file = PdfReader(input_path)
     if args.indices is None:
         indices = extract_sections(file)
-        print(indices)
+        # print(indices)
     else:
         indices = [int(i) for i in args.indices.split(",")]
     if max(indices) - 1 > len(file.pages):
@@ -96,6 +96,6 @@ if __name__ == "__main__":
     indices.append(len(file.pages) + 1)
     output_files = split_pdf_file(file, indices)
     for i, output_file in enumerate(output_files):
-        output_path = output_dir / f"Q{args.start_question_number + i}.pdf"
+        output_path = output_dir / f"Q{args.start_question_number + str(i)}.pdf"
         with FileIO(output_path, "wb") as f:
             f.write(output_file.getvalue())
