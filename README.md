@@ -4,7 +4,7 @@ Python version
 
 ## Setup
 Make sure you have poetry installed.
-Then run `poetry install` to install it.
+Then run `poetry install` to install it. If you do not wish to install poetry, simply run `pip install pypdf`.
 
 ## Example usage
 
